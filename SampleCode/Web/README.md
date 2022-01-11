@@ -11,16 +11,18 @@
 - 联系商务经理开通非安全模式。
 
 **开发环境:**
+
 在开始运行示例项目之前，请确保开发环境满足以下要求：
 - 开发环境：react16.8及以上版本 + TypeScript + hooks
 - node版本 > 12
 
 **运行示例源码:**
+
 1. 在SDK和示例代码下载页面或 Demo 体验页面下载需要体验的示例项目或 Demo 源码工程。
-2. 在 `src/config.ts` 文件中配置私有化相关参数
+2. 在 `src/config.ts` 文件中配置为客户自己申请的appKey
   ```js
     export default {
-      appKey: '',
+      appKey: '*********客户申请的appKey**********',
       wbTargetUrl: '', // 白板部署链接
       wbOrigin: '', // 白板通信地址
       meetingServerDomain: '', // 房间服务domain
@@ -37,3 +39,18 @@
     $ npm start
   ```
 5. web端在浏览器打开 https://localhost:8000/#/ 访问项目
+
+**私有化:**
+
+在 `src/config.ts` 文件中配置appKey
+  ```js
+    export default {
+      appKey: '*********客户申请的appKey**********',
+      wbTargetUrl: '', // 白板部署链接
+      wbOrigin: '', // 白板通信地址
+      meetingServerDomain: '', // 房间服务domain
+      neRtcServerAddresses: {}, // G2私有化配置
+      imPrivateConf: {}, // im私有化配置
+    };
+  ```
+

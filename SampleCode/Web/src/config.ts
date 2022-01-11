@@ -14,7 +14,7 @@ const sceneOpt = {
 const sceneName = 'finance';
 
 export default {
-  appKey: 'ma8d1a54e1b7d8eecb8fca1cd4a3',
+  appKey: '*********客户申请的appKey**********',
   // 白板部署链接
   wbTargetUrl: 'https://meeting.163.com/whiteboard/stable/3.1.0/webview.html',
   // 白板通信地址
