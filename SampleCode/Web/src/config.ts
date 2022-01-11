@@ -14,30 +14,15 @@ const sceneOpt = {
 const sceneName = 'finance';
 
 export default {
-  appKey:
-    process.env.ENV === 'prod'
-      ? ''
-      : '',
+  appKey: '*********客户申请的appKey**********',
   // 白板部署链接
-  wbTargetUrl:
-    process.env.ENV === 'prod'
-      ? 'https://meeting.163.com/whiteboard/stable/3.1.0/webview.html'
-      : 'https://meeting.163.com/whiteboard/stable/3.1.0/webview_vconsole.html',
+  wbTargetUrl: 'https://meeting.163.com/whiteboard/stable/3.1.0/webview.html',
   // 白板通信地址
   wbOrigin: 'https://meeting.163.com',
   // 房间服务domain
-  meetingServerDomain:
-    process.env.ENV === 'prod'
-      ? 'https://meeting-api.netease.im'
-      : 'https://meeting-api-test.netease.im',
-  vceDomain:
-    process.env.ENV === 'prod'
-      ? 'https://meeting-api.netease.im'
-      : 'https://meeting-api-test.netease.im',
-  roomkitDomain:
-    process.env.ENV === 'prod'
-      ? 'https://meeting-api.netease.im'
-      : 'https://meeting-api-test.netease.im',
+  meetingServerDomain: 'https://meeting-api.netease.im',
+  vceDomain: 'https://meeting-api.netease.im',
+  roomkitDomain: 'https://meeting-api.netease.im',
   // G2私有化配置
   neRtcServerAddresses: {},
   // im私有化配置
