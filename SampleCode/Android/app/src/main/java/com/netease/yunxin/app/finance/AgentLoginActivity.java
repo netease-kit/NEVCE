@@ -18,9 +18,9 @@ public class AgentLoginActivity extends BaseActivity{
 
     private final static String TAG = "AgentActivity";
 
-    private String accountId = "19000000001";
+    private String accountId = "";
 
-    private String accountPwd = "Meeting163";
+    private String accountPwd = "";
 
     private EditText agentNameET;
     private EditText passwordET;
