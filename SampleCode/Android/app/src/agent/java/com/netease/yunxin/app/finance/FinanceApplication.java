@@ -23,7 +23,7 @@ public class FinanceApplication extends Application {
         instance = this;
         AppFrontBackManager.getInstance().initialize(this);
         NEVCESDKConfig sdkConfig = new NEVCESDKConfig();
-        sdkConfig.appKey = AppConfig.APP_KEY_VCE;
+        sdkConfig.appKey = AppConfig.APP_KEY;
         sdkConfig.appName = getString(R.string.app_name);
         sdkConfig.scene = SceneType.FINANCE;
         sdkConfig.serverUrl = AppConfig.SERVER_URL;
