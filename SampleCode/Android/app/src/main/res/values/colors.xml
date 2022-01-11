@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="red">#FFFF0000</color>
+    <color name="blue">#FF337EFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF222222</color>
+    <color name="grep">#FF999999</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#8E8E8E</color>
+    <color name="line">#BBC3CA</color>
+
+    <!--    imageText start-->
+    <color name="default_bg">#ff3f83c4</color>
+    <color name="default_bg_pressed">#9c000000</color>
+    <color name="default_bg_disabled">#ff999999</color>
+    <color name="default_text_color">#ffffff</color>
+    <!--    imageText end-->
+
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_ff526c">#ff526c</color>
+    <color name="color_grey_eaeaea">#eaeaea</color>
+    <color name="color_999999">#FF999999</color>
+    <color name="color_666666">#FF666666</color>
+    <color name="color_337EFF">#337EFF</color>
+    <color name="color_50_337EFF">#7f337eff</color>
+    <color name="color_f3f3f3">#f3f3f3</color>
+    <color name="color_FFDCDFE5">#FFDCDFE5</color>
+    <color name="color_FF333333">#FF333333</color>
+    <color name="color_FF1BBF52">#FF1BBF52</color>
+    <color name="color_FFBBBBBB">#FFBBBBBB</color>
+    <color name="color_FF222222">#FF222222</color>
+    <color name="color_FFBFBFBF">#FFBFBFBF</color>
+    <color name="color_FFD9D9DB">#FFD9D9DB</color>
+    <color name="color_FFE5362C">#FFE5362C</color>
+    <color name="color_FF337EFF">#FF337EFF</color>
+    <color name="color_FFF1F9FF">#FFF1F9FF</color>
+    <color name="color_FFBFD7FF">#FFBFD7FF</color>
+
+    <color name="progress_bg">#EAEFF9</color>
+    <color name="blue_pressed">#7cb342</color>
+    <color name="blue_normal">#ffffbb33</color>
+    <color name="green_complete">#ff99cc00</color>
+    <color name="purple_progress">#03a9f4</color>
+    <color name="red_error">#ffff4444</color>
+</resources>

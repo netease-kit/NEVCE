@@ -1,0 +1,56 @@
+buildscript {
+    ext {
+        kotlin_version = '1.4.31'
+    }
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        mavenLocal()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:4.1.1"
+    }
+}
+
+// version style: major.minor.hotfix{.buildNum}
+// if version name = a.b.c.d
+// then version code = a * 100,00,00 + b * 100,00 * c * 100 + d
+def versionName = '1.0.0.0'
+if (System.getenv("OVERRIDE_VERSION_NAME") != null) {
+    versionName = System.getenv("OVERRIDE_VERSION_NAME")
+} else if (project.hasProperty('VERSION_NAME')) {
+    versionName = project.property('VERSION_NAME').toString()
+}
+def versionCode = 1
+
+println "Version Info: versionName=$versionName versionCode=$versionCode"
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+    ext {
+        VERSION_CODE = versionCode as int
+        VERSION_NAME = versionName
+        localProperties = loadLocalProperties()
+    }
+
+    configurations.all {
+        // check for updates every build
+        resolutionStrategy.cacheChangingModulesFor  0,'seconds'
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+Properties loadLocalProperties() {
+    Properties properties = new Properties()
+    if (file('local.properties').exists()) {
+        properties.load(new FileInputStream(file('local.properties')))
+    }
+    return properties
+}
